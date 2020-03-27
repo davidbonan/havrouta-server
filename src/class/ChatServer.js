@@ -6,7 +6,7 @@ import uniqid from 'uniqid';
 
 export default class ChatServer {
   constructor() {
-    this.PORT = 5000;
+    this.DEV_PORT = 5000;
     this.app;
     this.port;
     this.server;
@@ -25,7 +25,7 @@ export default class ChatServer {
   }
 
   config() {
-    this.port = process.env.PORT || this.PORT;
+    this.port = process.env.PORT || this.DEV_PORT;
   }
 
   createServer() {
