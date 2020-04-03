@@ -12,6 +12,7 @@ module.exports = {
     describe: true,
     it: true,
     expect: true,
+    afterEach: true,
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },

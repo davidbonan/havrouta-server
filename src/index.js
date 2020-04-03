@@ -1,6 +1,5 @@
-const dotenv = require('dotenv');
+import 'dotenv/config';
+import Server from './core/Server';
 
-dotenv.config();
-
-// Import the rest of our application.
-module.exports = require('./server.js');
+const server = new Server();
+server.start();
